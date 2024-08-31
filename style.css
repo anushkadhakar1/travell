@@ -1,0 +1,151 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html, body{
+    height : 100vh;
+    width: 100vw;
+    background-color:#000;
+    background-image: url('https://c1.wallpaperflare.com/preview/202/748/8/vietnam-background-scenery-natural-mountain-travel.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: hsla(0, 0%, 0%, 0.6);
+    display: grid;
+    background-blend-mode: overlay;
+    background-position: center;
+    }
+
+ 
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: transparent;
+
+  }
+  
+ 
+  .logo a {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  .logo span {
+    color: #f1c40f; 
+  }
+  
+  
+  .nav-menu ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-menu a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+  }
+  
+  .nav-menu a:hover {
+    color: #f1c40f;
+  }
+  
+ 
+  .hamburger-icon {
+    font-size: 28px;
+    cursor: pointer;
+    color: #fff;
+    display: none; 
+  }
+  
+  .hamburger-icon:hover{
+    color: orange;
+  }
+ 
+  .dropdown_menu {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    background:rgba(0,0,0,0.5);
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    width: 200px;
+    padding: 10px;
+  }
+  
+  .dropdown_menu ul {
+    list-style: none;
+    width: 100%;
+  }
+  
+  .dropdown_menu a {
+    color: #fff;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown_menu a:hover {
+    color:orange;
+  }
+  
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    .nav-menu ul {
+      flex-direction: column; 
+      gap: 10px; 
+      padding-left: 90%;
+    }
+    
+    .nav-menu {
+      width: 100%; 
+    }
+    
+    .nav-menu ul li {
+      margin-bottom: 10px; 
+    }
+    
+    .container {
+      flex-direction: column; 
+      align-items: flex-start; 
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    .nav-menu {
+      display: none;
+    }
+  
+    .hamburger-icon {
+      display: block; 
+    }
+  
+    .dropdown_menu.show {
+      display: flex; 
+    }
+  }
+
+  .Title{
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    padding: 100px,100px
+  }
+
+  h2{
+    font-size: 40px;
+  }
+
+p{
+    font-size: 15px;
+    line-height: 20px;
+    ;
+}
